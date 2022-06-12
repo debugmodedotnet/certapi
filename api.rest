@@ -1,0 +1,12 @@
+http://localhost:8090/api/certficate
+
+
+###
+
+POST http://localhost:8090/api/certficate HTTP/1.1
+content-type: application/json
+
+{
+    "Email": "webmasters964@gmail.com",
+    "Name": "sdkjdkbdkj"
+}
