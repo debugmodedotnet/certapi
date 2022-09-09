@@ -3,10 +3,32 @@ http://localhost:8090/api/certficate
 
 ###
 
-POST http://localhost:8090/api/certficate HTTP/1.1
+POST https://ngindiacertapi.azurewebsites.net/api/certficate HTTP/1.1
 content-type: application/json
 
 {
-    "Email": "webmasters964@gmail.com",
-    "Name": "sdkjdkbdkj"
+    "Email": "questpond@questpond.com"
+}
+
+###
+
+GET  http://localhost:9090/api/books HTTP/1.1
+content-type: application/json
+
+###
+
+###
+
+GET  http://localhost:9090/api/books/1 HTTP/1.1
+content-type: application/json
+
+
+POST http://localhost:9090/api/books  HTTP/1.1
+content-type: application/json
+
+{
+    "Id": 67,
+    "Title":"abc",
+    "Price": 300,
+    "inStock": true
 }
