@@ -75,7 +75,7 @@ router.route('/books/:id').get((request, response) => {
     response.json(bookadded);
 });
 router.route('/certficate').post((request, response) => {
-    console.log(request);
+    console.log('dhananjay');
     let user = Object.assign({}, request.body);
     let userCert = certficate.getCertficate(user.email);
     response.json(userCert);

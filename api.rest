@@ -18,7 +18,7 @@ POST http://localhost:9090/api/certficate HTTP/1.1
 content-type: application/json
 
 {
-    "email": "aks.computerexpert@gmail.com"
+    "email": "ABC@gmail.com"
 }
 
 ###
