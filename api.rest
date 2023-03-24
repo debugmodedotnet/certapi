@@ -12,8 +12,20 @@ content-type: application/json
 
 ###
 
+###
+
+POST http://localhost:9090/api/certficate HTTP/1.1
+content-type: application/json
+
+{
+    "email": "aks.computerexpert@gmail.com"
+}
+
+###
+
 GET  http://localhost:9090/api/books HTTP/1.1
 content-type: application/json
+x-access-token:"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6ImFiY0BhYmMuY29tIiwiUGFzc3dvcmQiOiIxMjM0IiwiaWF0IjoxNjYzMzc5MDY0LCJleHAiOjE2NjMzNzkxMjR9.kAisgyrHpseskp-GtNes9kXXpx_q7zBWFTTzQuCa9Zw"
 
 ###
 
@@ -32,3 +44,15 @@ content-type: application/json
     "Price": 300,
     "inStock": true
 }
+
+
+POST http://localhost:9090/api/login  HTTP/1.1
+content-type: application/json
+
+{
+    "Email": "abc@abc.com",
+    "Password":"1234"
+}
+
+GET  http://localhost:9090/api/login HTTP/1.1
+content-type: application/json
